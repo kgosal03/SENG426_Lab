@@ -22,7 +22,7 @@ services:
       - sql-server
 
   frontend:
-    image: xxx/yyy.front
+    image: kgosal03/seng-426-frontend.front
     restart: always
     ports:
       - "80:80"
@@ -32,7 +32,7 @@ services:
       - ucrypt-app
 
   ucrypt-app:
-    image: xxx/yyy.back
+    image: kgosal03/seng-426-backend.back
     restart: always
     ports:
       - "8080:8080"
